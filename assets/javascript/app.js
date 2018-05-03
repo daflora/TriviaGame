@@ -1,19 +1,21 @@
 var images = [
-  "images/bootstrap.png",
-  "images/github-logo.jpg",
-  "images/logo_JavaScript.png"
+  "assets/images/cover.jpg",
+  "assets/images/gentle_black_hole.jpg",
+  "assets/images/io.jpg",
+  "assets/images/magellanic_clouds.jpg",
+  "assets/images/pluto_charon.jpg",
+  "assets/images/saturn.jpg"
 ];
 
 // Variable showImage will hold the setInterval when we start the slideshow
 var showImage;
-
 // Count will keep track of the index of the currently displaying picture.
 var count = 0;
 
 // TODO: Use jQuery to run "startSlideshow" when we click the "start" button.
-$("#start").on("click", startSlideshow);
+// $("#start").on("click", startSlideshow);
 // TODO: Use jQuery to run "stopSlideshow" when we click the "stop" button.
-$("#stop").on("click", stopSlideshow);
+// $("#stop").on("click", stopSlideshow);
 
 // This function will replace display whatever image it's given
 // in the 'src' attribute of the img tag.

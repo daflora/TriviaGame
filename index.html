@@ -14,39 +14,48 @@
   <div class="container">
 
       <!-- Jumbotron holds the title section and the questions. -->
-  <div class='jumbotron'>
-    <div class='container'>
+  <div class='jumbotron col-lg-6 text-center'>
+    <div class='question'>
       <h1>Mooooovie Trivia!</h1>
       <h2>Movies! With Cows! Moooray!</h2>
-      <small>Click any button to begin...</small>
+    </div>
+    <div class='row align-items-center'>
+      <div id="timer">hello</div>
+      <div id="tracker"><small>Click any button to begin...</small></div>
     </div>
   </div>
 
   <div class="row text-center">
-    <div id="buttons">
+    <!-- <div id="scoreboard"></div> -->
+    <div id="image-holder"></div>
+    <!-- <div id="timer"></div> -->
+  </div>
+
+  <div class="row text-center">
+    <div id="buttons" class="col-lg-4">
       <button id="btnA"><h2>A</h2></button>
     </div>
   </div>
 
   <div class="row text-center">
-    <div id="buttons">
+    <div id="buttons" class="col-lg-4">
       <button id="btnB"><h2>B</h2></button>
     </div>
   </div>
 
   <div class="row text-center">
-    <div id="buttons">
+    <div id="buttons" class="col-lg-4">
       <button id="btnC"><h2>C</h2></button>
     </div>
   </div>
 
   <div class="row text-center">
-    <div id="buttons">
+    <div id="buttons" class="col-lg-4">
       <button id="btnD"><h2>D</h2></button>
     </div>
   </div>
 
-  <div id="image-holder"></div>
+
 
   <!-- jQuery -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

@@ -11,9 +11,23 @@
     text-align: center;
   }
 
+  #scoreboard {
+    margin: 0 auto;
+    width: 100px;
+    height: 200px;
+    background-color: #330033;
+  }
+
+  #timer {
+    margin: 0 25px;
+    width: 200px;
+    height: 50px;
+    background-color: #990099;
+  }
+
   #buttons {
     /* Positioning */
-    margin: 10px 0;
+    margin: 2px 0;
     /* Typography */
     text-align: center;
   }
@@ -21,10 +35,15 @@
   button {
     /* Box-model */
     width: 500px;
-    height: 100px;
+    height: 70px;
     align-self;
   }
 
-  h2 {
-    line-height: 18px;
+  .question {
+    text-align: center;
+  }
+
+  .jumbotron {
+    padding: 10px;
+    margin: 5px;
   }
