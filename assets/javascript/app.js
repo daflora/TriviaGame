@@ -52,7 +52,7 @@ var btnDAnswers = [
   "D. Jupiter! I mean Saturn!"
 ];
 
-var answerKey = ["0","C","B","D","A","D"];
+var answerKey = ["0","btnC","btnB","btnD","btnA","btnD"];
 
 // PseudoCode:
 //
@@ -85,6 +85,8 @@ var answerKey = ["0","C","B","D","A","D"];
 // var showImage;
 var count = 0;
 var score = 0;
+var number = 10;
+var intervalId;
 
 
 $("#question").html("<h1>Astro Trivia!</h1><h2>The Sky! It's Full of Stars! Hooray!</h2>");
@@ -111,13 +113,21 @@ function runLoop(){
     $("#btnD").html("<h3>"+btnDAnswers[i]+"</h3>");
     run();
     displayImage(i);
-    
+    $(".buttons").onclick = evaluator(i);
+
+
   // var currentAnswer = $("#buttons").on("click",function(){this.btn})
   // This might be easier with objects, as there is a bit over DRY. Gar.
   // decision tree goes here.
-
-
   }
+}
+
+function evaluator(loopIndex){
+  if (".buttons"){
+    setTimeout(function(){$("#question").html("<h2>GET READY!</h2>");},1500);
+    $("#image-holder").html("<img src=assets/images/right.jpeg width='400px'>");
+  }
+  
 }
 
 function scoreKeep(){
@@ -127,8 +137,7 @@ function scoreKeep(){
 function displayImage(index) {
   $("#image-holder").html("<img src=" + images[index] + " width='400px'>");
 }
-var number = 10;
-var intervalId;
+
 
 function run() {
   clearInterval(intervalId);
