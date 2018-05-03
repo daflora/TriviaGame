@@ -103,14 +103,15 @@ function runTrivia(){
 // Loop runs the question/answer part
 function runLoop(){
   for (var i = 1; i<questionList.length; i++){
-  scoreKeep();
-  $("#question").html("<h2>"+questionList[i]+"</h2>");
-  $("#btnA").html("<h3>"+btnAAnswers[i]+"</h3>");
-  $("#btnB").html("<h3>"+btnBAnswers[i]+"</h3>");
-  $("#btnC").html("<h3>"+btnCAnswers[i]+"</h3>");
-  $("#btnD").html("<h3>"+btnDAnswers[i]+"</h3>");
-  run();
-
+    scoreKeep();
+    $("#question").html("<h2>"+questionList[i]+"</h2>");
+    $("#btnA").html("<h3>"+btnAAnswers[i]+"</h3>");
+    $("#btnB").html("<h3>"+btnBAnswers[i]+"</h3>");
+    $("#btnC").html("<h3>"+btnCAnswers[i]+"</h3>");
+    $("#btnD").html("<h3>"+btnDAnswers[i]+"</h3>");
+    run();
+    displayImage(i);
+    
   // var currentAnswer = $("#buttons").on("click",function(){this.btn})
   // This might be easier with objects, as there is a bit over DRY. Gar.
   // decision tree goes here.
@@ -123,8 +124,8 @@ function scoreKeep(){
   $("#tracker").html("Current score: " + score + " out of " + (count));
 }
 
-function displayImage() {
-  $("#image-holder").html("<img src=" + images[count] + " width='400px'>");
+function displayImage(index) {
+  $("#image-holder").html("<img src=" + images[index] + " width='400px'>");
 }
 var number = 10;
 var intervalId;
@@ -147,4 +148,4 @@ function stop() {
   clearInterval(intervalId);
 }
 // This will run the display image function as soon as the page loads.
-displayImage();
+displayImage(count);
