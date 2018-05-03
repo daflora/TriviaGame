@@ -11,13 +11,6 @@
     text-align: center;
   }
 
-  #scoreboard {
-    margin: 0 auto;
-    width: 100px;
-    height: 200px;
-    background-color: #330033;
-  }
-
   #timer {
     margin: 0 25px;
     width: 200px;
@@ -28,7 +21,7 @@
 
   #buttons {
     /* Positioning */
-    margin: 2px 0;
+    margin: 2px auto;
     /* Typography */
     text-align: center;
   }
@@ -37,7 +30,7 @@
     /* Box-model */
     width: 500px;
     height: 70px;
-    align-self;
+    margin: auto;
   }
 
   .question {
@@ -46,5 +39,5 @@
 
   .jumbotron {
     padding: 10px;
-    margin: 5px;
+    margin: 5px auto;
   }
