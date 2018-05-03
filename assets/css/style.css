@@ -1,0 +1,30 @@
+
+
+  body { /* Visual */ background: #660000;}
+
+  #image-holder {
+    /* Positioning */
+     margin: 0 auto;
+    /* Box-model */
+    width: 400px;
+    /* Typography */
+    text-align: center;
+  }
+
+  #buttons {
+    /* Positioning */
+    margin: 10px 0;
+    /* Typography */
+    text-align: center;
+  }
+
+  button {
+    /* Box-model */
+    width: 500px;
+    height: 100px;
+    align-self;
+  }
+
+  h2 {
+    line-height: 18px;
+  }
