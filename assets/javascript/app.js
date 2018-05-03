@@ -89,7 +89,7 @@ var score = 0;
 
 $("#question").html("<h1>Astro Trivia!</h1><h2>The Sky! It's Full of Stars! Hooray!</h2>");
 $("#tracker").html("<small>Click any button to begin...</small>");
-
+$("#timer").html("<h2>HELLO!</h2>");
 $("#buttons").on("click",runTrivia);
 
 // Game framework handles start transition and final
@@ -111,6 +111,9 @@ function runLoop(){
   $("#btnD").html("<h3>"+btnDAnswers[i]+"</h3>");
   run();
 
+  // var currentAnswer = $("#buttons").on("click",function(){this.btn})
+  // This might be easier with objects, as there is a bit over DRY. Gar.
+  // decision tree goes here.
 
 
   }
